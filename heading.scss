@@ -19,13 +19,13 @@ body {
 .top {
     width: fit-content;
     border-bottom: 10px #000 solid;
-    height: 200px;
+    height: 110px;
     overflow-y: hidden;
 
     .first-line, 
     .second-line {
         position: relative;
-        top: 200px;
+        top: 55px;
     }
 
     .first-line {
@@ -55,10 +55,10 @@ body {
 
 @keyframes uncoverFirstLine {
     0% {
-        top: 200px;
+        top: 110px;
     }
     50% {
-        top: 100px;
+        top: 55px;
     }
     100% {
         top: 0;
@@ -67,10 +67,78 @@ body {
 
 @keyframes uncoverSecondLine {
     0% {
-        top: 200px;
+        top: 110px;
     }
     100% {
         top: 0;
+    }
+}
+
+@media screen and (min-width:480px) {
+    .top {
+        height: 135px;
+
+        .first-line, 
+        .second-line {
+            position: relative;
+            top: 145px;
+        }
+    }
+
+
+    @keyframes uncoverFirstLine {
+        0% {
+            top: 140px;
+        }
+        50% {
+            top: 70px;
+        }
+        100% {
+            top: 0;
+        }
+    }
+    
+    @keyframes uncoverSecondLine {
+        0% {
+            top: 140px;
+        }
+        100% {
+            top: 0;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .top {
+        height: 270px;
+
+        .first-line, 
+        .second-line {
+            position: relative;
+            top: 270px;
+        }
+    }
+
+
+    @keyframes uncoverFirstLine {
+        0% {
+            top: 260px;
+        }
+        50% {
+            top: 130px;
+        }
+        100% {
+            top: 0;
+        }
+    }
+    
+    @keyframes uncoverSecondLine {
+        0% {
+            top: 260px;
+        }
+        100% {
+            top: 0;
+        }
     }
 }
 
