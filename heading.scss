@@ -142,6 +142,40 @@ body {
     }
 }
 
+@media screen and (min-width:1536px) {
+    .top {
+        height: 270px;
+
+        .first-line, 
+        .second-line {
+            position: relative;
+            top: 270px;
+        }
+    }
+
+
+    @keyframes uncoverFirstLine {
+        0% {
+            top: 270px;
+        }
+        50% {
+            top: 135px;
+        }
+        100% {
+            top: 0;
+        }
+    }
+    
+    @keyframes uncoverSecondLine {
+        0% {
+            top: 270px;
+        }
+        100% {
+            top: 0;
+        }
+    }
+}
+
 .bottom {
     height: 60px;
     overflow-y: hidden;
