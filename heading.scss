@@ -269,3 +269,43 @@ body {
         }
     }
 }
+
+@media screen and (min-width:1536px) {
+    .bottom {
+        height: 120px;
+
+        .list-wrapper {
+            top: -480px;
+
+            .list-title {    
+                li {
+                    height: 120px;
+                }
+            }
+        }
+    }
+
+    @keyframes uncoverListItems {
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(120px);
+        }
+    }
+    
+    @keyframes carousel {
+        0%, 20%{
+            transform: translateY(0);
+        }
+        25%, 50%{
+            transform: translateY(120px);
+        }
+        55%, 75% {
+            transform: translateY(240px);
+        }
+        80%, 100% {
+            transform: translateY(360px);
+        }
+    }
+}
