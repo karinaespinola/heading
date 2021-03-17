@@ -110,22 +110,22 @@ body {
 
 @media screen and (min-width:1024px) {
     .top {
-        height: 270px;
+        height: 220px;
 
         .first-line, 
         .second-line {
             position: relative;
-            top: 270px;
+            top: 220px;
         }
     }
 
 
     @keyframes uncoverFirstLine {
         0% {
-            top: 260px;
+            top: 220px;
         }
         50% {
-            top: 130px;
+            top: 110px;
         }
         100% {
             top: 0;
@@ -134,7 +134,7 @@ body {
     
     @keyframes uncoverSecondLine {
         0% {
-            top: 260px;
+            top: 220px;
         }
         100% {
             top: 0;
