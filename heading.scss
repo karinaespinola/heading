@@ -143,12 +143,12 @@ body {
 }
 
 .bottom {
-    height: 90px;
+    height: 60px;
     overflow-y: hidden;
 
     .list-wrapper {
         position: relative;
-        top: -400px;
+        top: -240px;
         animation: uncoverListItems;
         animation-duration: 1s;
         animation-delay: 2s;
@@ -162,6 +162,10 @@ body {
             animation-iteration-count: infinite;
             animation-duration: 7s;
             animation-timing-function:cubic-bezier(0.55, 0.09, 0.55, 0.96);
+
+            li {
+                height: 60px;
+            }
         }
     }
 
@@ -173,7 +177,7 @@ body {
 		transform: translateY(0);
 	}
 	100%{
-		transform: translateY(100px);
+		transform: translateY(60px);
 	}
 }
 
@@ -182,12 +186,12 @@ body {
 		transform: translateY(0);
 	}
 	25%, 50%{
-		transform: translateY(100px);
+		transform: translateY(60px);
 	}
 	55%, 75% {
-		transform: translateY(200px);
+		transform: translateY(120px);
 	}
     80%, 100% {
-		transform: translateY(291px);
+		transform: translateY(180px);
 	}
 }
